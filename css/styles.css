@@ -39,3 +39,14 @@ footer {
 .navbar {
     background-color: #901cad;
 }
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel {
+    border: solid #5637DD;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: silver;
+  }
