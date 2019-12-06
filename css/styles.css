@@ -43,3 +43,8 @@ footer {
   position: absolute;
   right: 0;
   bottom: 0; }
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").hide();
+  });
+});

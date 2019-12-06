@@ -40,7 +40,7 @@
                 </div>
                 <!-- Button trigger modal -->
                 <div class="col my-auto">
-                    <button type="button" class=" btn  btn-primary" data-toggle="modal" data-target="#exampleModal">
+                    <button type="button" class=" btn  btn-primary" id="reserveButton">
                         Reserve Campsite
                     </button>
 
@@ -155,8 +155,9 @@
 
                 <!--Login section  -->
                 <span class="navbar-text ml-auto">
-                    <a data-toggle="modal" data-target="#loginModal">
-                        <i class="fa fa-sign-in"></i> Login</a>
+                    <a id="loginButton">
+                        <i class="fa fa-sign-in"></i> Login
+                    </a>
                 </span>
 
 
@@ -408,6 +409,29 @@
         </div>
 
     </footer>
+
+    <a id="button1">Click to hide</a>
+
+    <div class="modal fade" id="newModal" role="dialog">
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Sample Modal</h4>
+                </div>
+                <div class="modal-body">
+                    <p>This is demo text.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    </div>
+
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
@@ -415,7 +439,34 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <script src="js/scripts.js"></script>
+
     <!-- endbuild -->
+    <script>
+        $(document).ready(function () {
+            $("#loginButton").click(function () {
+                $("#loginModal").modal("show");
+            });
+        });
+ 
+
+        $(document).ready(function () {
+            $("#reserveButton").click(function () {
+                $("#exampleModal").modal("show");
+            });
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
 
