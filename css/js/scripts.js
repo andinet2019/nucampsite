@@ -1,7 +1,8 @@
 $(function() {
   $(".carousel").carousel({
-    interval: 2000
+    interval: 20
   });
+
   $("#carouselButton").click(function() {
     if (
       $("#carouselButton")
@@ -25,4 +26,14 @@ $(function() {
         .addClass("fa-pause");
     }
   });
+});
+
+$(document).ready(function() {
+  $("#loginButton").click(function() {
+    $("#loginModal").modal("show");
+  });
+});
+
+$("#reserveButton").click(function() {
+  $("#exampleModal").modal("show");
 });
